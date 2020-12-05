@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Noto+Sans&display=swap");
+
+* {
+  margin: 0;
+}
+
+/**Header **/
+.header {
+  background: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 18px 20px 0px 20px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+}
+
+.header__seachInput {
+  height: 12px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  background: #febd69;
+  height: 22px !important;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__options {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.header__optionsLineOne {
+  font-size: 10px;
+}
+
+.header__optionsLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionsBasket {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.BasketCount {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+/**ends Header **/
+
+/**home **/
+
+.home {
+  max-width: 1260px;
+  margin: 0 auto;
+  background: #eaeded;
+  font-family: "Archivo", sans-serif;
+}
+
+.home_image {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  margin-bottom: -150px;
+}
+
+.home__row {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  margin: 0px 5px;
+}
+
+/**ends home**/
+
+/**product **/
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  max-height: 400px;
+  min-width: 100px;
+  margin: 10px;
+  z-index: 5;
+}
+
+.product__info {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.product__star {
+  color: #dfa411;
+}
+
+.product__price {
+  margin-top: 5px;
+}
+
+.product > img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product > button {
+  background: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+  outline: none;
+}
+
+/**ends product**/
+
+/** Login **/
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin: 0.2rem auto;
+  max-width: 350px;
+  width: 100%;
+  /* font-family: "Archivo", sans-serif; */
+}
+
+.login__logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.login__logo > img {
+  max-width: 103px;
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
+
+.login__logo span {
+  position: absolute;
+  bottom: 1.12rem;
+  right: 6.5rem;
+}
+
+.login__inputcon {
+  margin-top: 0.5rem;
+  padding: 20px 26px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  font-size: 13px;
+}
+
+.login__inputcon h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 15px !important;
+}
+
+.login__inputcon__feild {
+  width: 100%;
+  margin-bottom: 14px !important;
+}
+
+.login__inputcon__feild > label {
+  display: block;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  font-weight: 700;
+}
+
+.login__inputcon__feild__input {
+  width: calc(100% - 26px);
+  padding: 3px 7px;
+  height: 21px;
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 1px 0 rgba(0, 0, 0, 0.07) inset;
+  outline: 0;
+  line-height: normal;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+}
+
+.login__condition {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  font-weight: 500;
+}
+
+.login__condition > a,
+.login__condition > a:active,
+.login__condition > a:link,
+.login__condition > a:visited {
+  text-decoration: none;
+  color: #0066c0;
+}
+
+.login__submit__button {
+  background: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+  margin-top: 15px !important;
+  width: 100%;
+  border-radius: 2px;
+  outline: none;
+  color: #111;
+  padding: 3px 7px;
+  height: 31px;
+}
+
+.login__submit__button:hover {
+  border-color: #9c7e31 #a88734 #846a29;
+  background: #dfb13c;
+}
+
+/**ends Login**/
